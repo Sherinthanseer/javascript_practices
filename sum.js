@@ -37,3 +37,26 @@ else{
     default:
           console.log("regular day");
  }
+//  loops
+// while
+var i=0;
+while(i<11){
+    console.log(i);
+    i++;
+}
+// for
+for(let a=0;a<=10;a++)
+    {
+    console.log(a);
+}
+// for in
+const person = { name: 'John', age: 30};
+for (let key in person) {
+console.log(key+':' + person [key]);
+}
+// for of
+const fruits =['apple', 'banana', 'cherry'];
+for (let fruit of fruits) 
+{
+console.log(fruit);
+}
