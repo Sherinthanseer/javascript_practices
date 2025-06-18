@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // ANAGRAM
+       var str = prompt("Enter first string");
+var str2 = prompt("Enter second string");
+
+var arr1 = str.split('').sort().join('');
+var arr2 = str2.split('').sort().join('');
+
+if (arr1 === arr2) {
+    alert("Strings are anagrams");
+} else {
+    alert("Strings are not anagrams");
+}
+
+
+// DUPLICATE
+//  var str = prompt("Enter string");;
+// let result = "";
+// for (let i = 0; i < str.length; i++) {
+//   if (result.indexOf(str[i]) === -1) {
+//     result += str[i];
+//   }
+// }
+// alert(result);
+
+// spaces
+
+// var str = prompt("Enter string");;
+// var arr1 = str.split('')
+// let result = "";
+// for (let i = 0; i < arr1.length; i++) {
+//   if(arr1[i]!==" ") {
+//     result += arr1[i];
+//   }
+// }
+// alert(result);
+
+// occurrance
+
+//  var str = prompt("Enter string");
+//  var a= prompt("Enter character");;
+// var arr1 = str.split('')
+// var count=0;
+// for (let i = 0; i < arr1.length; i++) {
+//   if(arr1[i]==a) {
+//     count++;
+//   }
+// }
+// alert(`${count}`);
+
+// replace
+
+// var str = prompt("Enter string");
+// var a = prompt("Enter which word to be replaced");
+// var b = prompt("Enter what word to be replaced");
+// var result = str.replaceAll(a, b);
+// alert(`${result}`);
+
+// digit
+
+
+//  var str = prompt("Enter string");
+// var arr1 = str.split('')
+// var count=0;
+// for (let i = 0; i < arr1.length; i++) {
+//   if(!isNaN(arr1[i])) {
+//     count++;
+//   }
+// }
+// if(count===arr1.length){
+// alert("string only contains digits");
+// }
+// else{
+// alert("string  does not only contains digits");
+// }
+
+// extract
+
+// var str = prompt("Enter string");
+// var arr1 = str.split('')
+// let result="";
+// var count=0;
+// for (let i = 0; i < arr1.length; i++) {
+//   if(!isNaN(arr1[i])) {
+//     result += arr1[i];
+//   }
+// }
+// alert(`${result}`);
+
+
+// array
+
+// var str = prompt("Enter string");
+// var arr1 = str.split('');
+// var arr2 = [];
+
+// for (let i = 0; i < arr1.length; i++) {
+//     arr2[i] = arr1[i];
+// }
+
+// console.log(arr2);
+
+// special char
+
+
+// var str = prompt("Enter string");
+// var str2 = str.replace(/[^A-Za-z]/g, '');
+// alert(str2);
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
