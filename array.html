@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+// const numbers = [1, 2, 3, 4, 5];
+// console.log(numbers.length);
+
+// numbers.push(6);
+// console.log(numbers);
+
+// const removedElement = numbers.pop();
+// console.log(removedElement);
+
+// const firstElement = numbers.shift();
+// console.log(firstElement);
+
+// numbers.unshift(0);
+// console.log(numbers);
+
+// console.log(numbers.indexOf(3));
+
+// numbers.splice(1, 2, 8, 9);
+// console.log(numbers);
+
+// const slicedArray = numbers.slice(1, 4);
+// console.log(slicedArray);
+
+// const array1 = [1, 2];
+// const array2 = [3, 4];
+
+// const concatenatedArray = array1.concat(array2);
+// console.log(concatenatedArray);
+
+// const names = ["John", "Alice", "Bob"];
+// const joinedNames = names.join(", ");
+// console.log(joinedNames);
+
+// map
+const numbers = [1, 2, 3, 4, 5];
+const squares = numbers.map(function(num) { return num * num;});
+alert(squares); 
+
+// find
+
+const num = [5, 9, 12, 7, 15];
+
+const Even = num.find(function(n) {
+  return n % 2 === 0;
+});
+
+alert(Even);
+
+// reduce
+
+let arr = [1, 2, 3, 4, 5];
+let result = arr.reduce((sum, current) => sum + current, 0);
+alert(result);
+
+    </script>
+    
+</body>
+</html>
