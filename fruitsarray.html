@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         // Create an array named fruits containing "apple", "banana", and "mango".
+        let fruits=['apple','banana','mango'];
+        // Print the first and last item from the fruits array.
+        alert(`${fruits[0]},${fruits[2]}`);
+        // Write a program to display the length of the fruits array
+        alert(`length of the array=${fruits.length}`);
+        // Add "orange" to the end of the fruits array.
+        fruits.push('orange');
+        alert(`after pushing =${fruits}`);
+        // Add "grape" to the beginning of the fruits array
+        fruits.unshift("grapes");  
+        alert(`after unshifting = ${fruits}`);
+        // Remove the last item from the fruits array and display the updated array.
+        fruits.pop();
+        alert(`after popping =${fruits}`);
+        // Remove the first item from the fruits array and display the updated array
+        fruits.shift();  
+        alert(`after shifting = ${fruits}`);
+        // Use a for loop to print each element of the fruits array
+        for(let a=0;a<fruits.length;a++)
+    {
+        console.log(`${fruits[a]}`);
+    }
+    // Use forEach() to print each element in the array.
+    fruits.forEach(function(fruit)
+     { 
+        console.log(`forEach: ${fruit}`);
+     });
+    //  Write a program to check whether "banana" exists in the array or not
+    if (fruits.includes("banana"))
+     {
+    alert("banana exists in the array");
+    }
+    else
+     {
+    alert("banana does not exist in the array");
+     }
+    //Find and print the index of "mango" in the array
+    let index = fruits.indexOf('mango');
+    console.log(`The index of "mango" is: ${index}`);
+    // Convert the array into a string separated by commas
+    arr=fruits.toString();
+    console.log(arr);
+     </script>
+</body>
+</html>
