@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="parent">
+    <h1 class="heading">Welcome to my website!</h1>
+    <p id="myParagraph">This is a paragraph element.</p>
+    </div>
+    <button id="addButton">Add Element</button>
+    <button id="removeButton">Remove Element</button>
+    <script>
+        const parentDiv = document.getElementById("parent");
+        const addButton= document.getElementById("addButton");
+        const removeButton= document.getElementById("removeButton");
+        addButton.addEventListener("click",function(){
+            const newElement=document.createElement("p");
+            newElement.textContent="this is dynamically created paragraph";
+            parentDiv.appendChild(newElement);
+        });
+        removeButton.addEventListener("click",function(){
+            const firstChild=parentDiv.firstElementChild;
+            parentDiv.removeChild(firstChild);
+        });
+        const myParagraph = document.getElementById("myParagraph");
+        myParagraph.setAttribute("title", "This is a paragraph with a title.");
+        const titleAttribute=myParagraph.getAttribute("title");
+        const headingElement = document.querySelector(".heading");
+        headingElement.innerHTML = "Welcome to <em>My Website</em>!";
+    </script>
+</body>
+</html>=

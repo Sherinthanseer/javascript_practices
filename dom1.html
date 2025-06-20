@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Shopping list</title>
+    </head>
+    <body>
+    <div id="parent">
+        <h1 class="heading">What to buy</hi>
+        <p title="a gentle reminder">Don't forget to buy this stuff.</p>
+        <ul id="purchases">
+            <li>A tin of beans</li>
+            <li>Cheese</li>
+            <li>Milk</li>
+            <li>Butter</li>
+        </ul>
+    </div>
+
+    <script>
+        const parentElement = document.getElementById("parent");
+        console.log("Parent Element:", parentElement);
+        console.log("Parent Node:", parentElement.parentNode);
+        const listParentElement = document.getElementById("parent");
+        const children = listParentElement.children;
+        console.log("Child Elements:", children);
+        const firstChild = parentElement.firstChild;
+        console.log("First Child:", firstChild);
+        const LastChild=parentElement.LastChild;
+        console.log("Last Child:", LastChild);
+        const ulElement=document.getElementById("purchases");
+        const previousSiblling=ulElement.previousSiblling;
+        console.log("previous sibling of<ul>:", previousSiblling);
+        const nextSibling =ulElement.nextSibling;
+        console.log("Next Sibling of <ul>:", nextSibling);
+        
+    </script>
+</body>
+</html>
