@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function partition(arr) {
+    let total = 0;
+
+    for (let i = 0; i < arr.length; i++) {
+        total += arr[i];
+    }
+
+    if (total % 2 !== 0) {
+        return false;
+    }
+
+    let target = total / 2;
+
+    function fn(index, sum) {
+        if (sum === target) {
+            return true;
+        }
+
+        if (index >= arr.length || sum > target) {
+            return false;
+        }
+
+        return fn(index + 1, sum + arr[index]) || fn(index + 1, sum);
+    }
+
+    return fn(0, 0);
+}
+
+const arr = [1, 5, 11, 5];
+const result = partition(arr);
+console.log("Can partition into equal sum subsets:", result);
+
+    </script>
+</body>
+</html>

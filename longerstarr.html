@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+function longest(arr, K) {
+    let maxLen = 0;
+
+    for (let i = 0; i < arr.length; i++) {
+        let sum = 0;
+
+        for (let j = i; j < arr.length; j++) {
+            sum += arr[j];
+
+            if (sum === K) {
+                let length = j - i + 1;
+                if (length > maxLen) {
+                    maxLen = length;
+                }
+            }
+        }
+    }
+
+    return maxLen;
+}
+
+const arr = [1, 2, 3, 1, 1];
+const K = 5;
+
+const result = longest(arr, K);
+console.log("Length of longest subarray with sum", K, "is:", result);
+
+        
+    </script>
+</body>
+</html>

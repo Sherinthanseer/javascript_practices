@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>function maxProduct(arr) {
+    let maxProd = arr[0];
+    let currMax = arr[0];
+    let currMin = arr[0];
+
+    for (let i = 1; i < arr.length; i++) {
+        let num = arr[i];
+
+        if (num < 0) {
+            [currMax, currMin] = [currMin, currMax];
+        }
+
+        currMax = Math.max(num, currMax * num);
+        currMin = Math.min(num, currMin * num);
+
+        if (currMax > maxProd) {
+            maxProd = currMax;
+        }
+    }
+
+    return maxProd;
+}
+
+const arr = [2, 3, -2, 4];
+const result = maxProduct(arr);
+console.log("Maximum product of subarray is:", result);
+</script>
+</body>
+</html>
